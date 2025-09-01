@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Input/Output folders (keep folders but ignore contents)
+Input/*
+!Input/.gitkeep
+Output/*
+!Output/.gitkeep
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Media files (optional - remove if you want to track them)
+*.mp4
+*.mp3
+*.wav
+*.m4a
+*.opus
+*.mkv
+*.avi
+*.mov
