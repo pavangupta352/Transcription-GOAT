@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(python3:*)",
+      "Read(/Users/pavan/Documents/**)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(source:*)",
+      "Bash(brew install:*)",
+      "Bash(cat:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

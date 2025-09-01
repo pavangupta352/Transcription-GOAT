@@ -1,0 +1,256 @@
+════════════════════════════════════════════════════════════════════════════════
+TRANSCRIPT: n8n help.mp4
+Date: 2025-09-01 08:01:16
+Language: EN
+════════════════════════════════════════════════════════════════════════════════
+
+[00:00.000 → 00:05.919]
+Okay, so this should be relatively simple for you.
+
+[00:05.919 → 00:16.559]
+I'm trying to duplicate some of my scenarios in Make and I'm trying to create workflows
+
+[00:16.559 → 00:19.760]
+in 8n.
+
+[00:19.760 → 00:23.920]
+So this was pretty straightforward.
+
+[00:23.920 → 00:29.600]
+It pings a drive every 10 minutes or so, looks for a new file.
+
+[00:29.600 → 00:40.399]
+And then when it finds a file, it will download the file and then send it to Gemini.
+
+[00:40.399 → 00:49.280]
+And then Gemini will extract the action items based on this prompt.
+
+[00:49.359 → 01:00.240]
+And then it will also create a name, a five to seven word title.
+
+[01:00.240 → 01:06.640]
+And then once it's done, it'll send all of that to me via email.
+
+[01:06.640 → 01:10.040]
+The action items will be listed right here.
+
+[01:10.040 → 01:15.239]
+And then there's also a link to the actual file.
+
+[01:15.239 → 01:18.439]
+This file right here, there's a link to the file.
+
+[01:18.480 → 01:22.000]
+And then, I guess this is it.
+
+[01:22.000 → 01:24.640]
+Oh, that's the name of the file.
+
+[01:24.640 → 01:28.519]
+That's the link to the file.
+
+[01:28.519 → 01:30.599]
+I don't know why this is in here twice.
+
+[01:30.599 → 01:31.599]
+That's weird.
+
+[01:31.599 → 01:32.599]
+I don't know.
+
+[01:32.599 → 01:35.359]
+But I don't know what the heck I'm doing half the time.
+
+[01:35.359 → 01:36.359]
+But it works.
+
+[01:36.359 → 01:37.359]
+This works.
+
+[01:37.359 → 01:38.359]
+It works perfectly.
+
+[01:38.359 → 01:40.200]
+Everything works exactly like how it should.
+
+[01:40.200 → 01:43.640]
+I'm just trying to duplicate this in Make.
+
+[01:43.640 → 01:48.200]
+Whoops, I'm sorry, 8n and I'm stuck.
+
+[01:48.200 → 01:52.799]
+So I've got the Google Drive trigger here.
+
+[01:52.799 → 01:58.480]
+And I have this set for every five minutes to check the folder.
+
+[01:58.480 → 02:03.359]
+And then once it does that, I put this Google Drive download here.
+
+[02:03.359 → 02:08.120]
+I have no idea what to use here.
+
+[02:08.120 → 02:12.560]
+Because it says file by ID and it says JSON ID.
+
+[02:12.560 → 02:15.159]
+I have no idea what to do with that.
+
+[02:15.159 → 02:17.960]
+Do I use by ID or by URL?
+
+[02:18.439 → 02:21.400]
+And then do I put, where is it?
+
+[02:21.400 → 02:24.680]
+Do I put like this URL?
+
+[02:24.680 → 02:26.319]
+I don't know.
+
+[02:26.319 → 02:28.360]
+Text plane.
+
+[02:28.360 → 02:30.159]
+Yeah.
+
+[02:30.159 → 02:36.960]
+So yeah, so I'm uploading transcripts into this folder.
+
+[02:36.960 → 02:44.319]
+I want this execution or this workflow to scan the folder, download the file, send it
+
+[02:44.360 → 02:50.000]
+over to ChatGPT.
+
+[02:50.000 → 02:55.759]
+And I put this message, prompt, roll your expert meeting, note taker, blah, blah, blah.
+
+[02:55.759 → 03:04.680]
+But what I don't know how to do is I don't know how to tell it what to, you know, like
+
+[03:04.680 → 03:10.360]
+these were these things called.
+
+[03:10.360 → 03:13.240]
+Right here, file data.
+
+[03:13.240 → 03:15.120]
+So this is the data.
+
+[03:15.120 → 03:18.280]
+This is like the actual file itself.
+
+[03:18.280 → 03:23.599]
+And it sends the file over to Chat.
+
+[03:23.599 → 03:29.240]
+Max output totally.
+
+[03:29.240 → 03:33.360]
+Yeah, so I just, I don't know how to do that here.
+
+[03:33.360 → 03:35.879]
+Let's see here.
+
+[03:35.879 → 03:42.400]
+Output content is JSON message, a model.
+
+[03:42.400 → 03:49.199]
+Yeah.
+
+[03:49.199 → 03:51.759]
+So it's supposed to get the action items.
+
+[03:51.759 → 04:04.960]
+And then this one is supposed to create the title, five to seven word title.
+
+[04:04.960 → 04:07.319]
+Simplify output.
+
+[04:07.319 → 04:11.120]
+I don't know.
+
+[04:11.120 → 04:16.560]
+So this is supposed to take the exact same call, the transcript from here and create
+
+[04:16.560 → 04:18.560]
+a title from it.
+
+[04:18.560 → 04:29.120]
+And again, I don't know where we get that execute previous nodes.
+
+[04:29.120 → 04:34.680]
+Usually outputs the following fields.
+
+[04:34.680 → 04:36.199]
+Google Drive trigger.
+
+[04:36.199 → 04:43.800]
+Google Drive download.
+
+[04:43.800 → 04:48.639]
+Name.
+
+[04:48.639 → 04:50.319]
+There may be more fields.
+
+[04:50.319 → 04:57.439]
+Execute the node to be sure.
+
+[04:57.439 → 05:02.439]
+Execute this one.
+
+[05:03.000 → 05:08.839]
+Yeah, that's it.
+
+[05:08.839 → 05:11.759]
+Yeah.
+
+[05:11.759 → 05:14.879]
+Download.
+
+[05:14.879 → 05:18.439]
+Data.
+
+[05:18.439 → 05:25.439]
+Download.
+
+[05:25.439 → 05:28.040]
+How do I get, yeah, I don't know how to do this.
+
+[05:28.040 → 05:36.800]
+How do I get to send this transcript over to chat and then to get the action items and
+
+[05:36.800 → 05:48.759]
+then this is supposed to name a file.
+
+[05:48.759 → 05:53.360]
+Yeah, I don't know how to do this.
+
+[05:53.360 → 05:56.759]
+This is where I need your help.
+
+[05:56.839 → 06:01.120]
+So separately, why is this asking me to upgrade?
+
+[06:01.120 → 06:07.279]
+I thought I didn't have to do that being that this was self-hosted.
+
+[06:07.279 → 06:10.439]
+I'm confused about that.
+
+[06:10.439 → 06:12.319]
+Okay, let me know.
+
+[06:12.319 → 06:16.720]
+You should have access to this if you don't let me know, but you should have access.
+
+[06:16.720 → 06:24.800]
+I'm trying to get this Fathom transcription node or workflow working.
+
+--------------------------------------------------------------------------------
+FULL TEXT (WITHOUT TIMESTAMPS):
+--------------------------------------------------------------------------------
+Okay, so this should be relatively simple for you. I'm trying to duplicate some of my scenarios in Make and I'm trying to create workflows in 8n. So this was pretty straightforward. It pings a drive every 10 minutes or so, looks for a new file. And then when it finds a file, it will download the file and then send it to Gemini. And then Gemini will extract the action items based on this prompt. And then it will also create a name, a five to seven word title. And then once it's done, it'll send all of that to me via email. The action items will be listed right here. And then there's also a link to the actual file. This file right here, there's a link to the file. And then, I guess this is it. Oh, that's the name of the file. That's the link to the file. I don't know why this is in here twice. That's weird. I don't know. But I don't know what the heck I'm doing half the time. But it works. This works. It works perfectly. Everything works exactly like how it should. I'm just trying to duplicate this in Make. Whoops, I'm sorry, 8n and I'm stuck. So I've got the Google Drive trigger here. And I have this set for every five minutes to check the folder. And then once it does that, I put this Google Drive download here. I have no idea what to use here. Because it says file by ID and it says JSON ID. I have no idea what to do with that. Do I use by ID or by URL? And then do I put, where is it? Do I put like this URL? I don't know. Text plane. Yeah. So yeah, so I'm uploading transcripts into this folder. I want this execution or this workflow to scan the folder, download the file, send it over to ChatGPT. And I put this message, prompt, roll your expert meeting, note taker, blah, blah, blah. But what I don't know how to do is I don't know how to tell it what to, you know, like these were these things called. Right here, file data. So this is the data. This is like the actual file itself. And it sends the file over to Chat. Max output totally. Yeah, so I just, I don't know how to do that here. Let's see here. Output content is JSON message, a model. Yeah. So it's supposed to get the action items. And then this one is supposed to create the title, five to seven word title. Simplify output. I don't know. So this is supposed to take the exact same call, the transcript from here and create a title from it. And again, I don't know where we get that execute previous nodes. Usually outputs the following fields. Google Drive trigger. Google Drive download. Name. There may be more fields. Execute the node to be sure. Execute this one. Yeah, that's it. Yeah. Download. Data. Download. How do I get, yeah, I don't know how to do this. How do I get to send this transcript over to chat and then to get the action items and then this is supposed to name a file. Yeah, I don't know how to do this. This is where I need your help. So separately, why is this asking me to upgrade? I thought I didn't have to do that being that this was self-hosted. I'm confused about that. Okay, let me know. You should have access to this if you don't let me know, but you should have access. I'm trying to get this Fathom transcription node or workflow working.
